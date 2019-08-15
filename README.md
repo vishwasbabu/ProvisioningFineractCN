@@ -133,7 +133,7 @@ java -jar service/build/libs/service-0.1.0-BUILD-SNAPSHOT-boot.jar -Drun.argumen
 
 ### Initializing the application
 
-Once all services are started you will have to create an initial tenant, provision services for the same and then create a login user for the tenant.
+Once all services are started we will have to create an initial tenant, provision services for the same and then create a login user for the tenant.
 
 #### Provisioning the Microservices
 
