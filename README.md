@@ -137,11 +137,11 @@ Once all services are started we will have to create an initial tenant, provisio
 
 #### Provisioning the Microservices
 
-We provide a postman-request-collection as well as a postman-environment that defines variables that are used to hold values received in responses. Both files are located in the 
-[postman-initial-requests folder](https://github.com/vishwasbabu/ProvisioningFineractCN/postman-initial-requests):
+We provide a postman-request-collection as well as a postman-environment that defines variables that are used to hold values received in responses. Both files are located under 
+[postman-initial-requests folder](https://github.com/vishwasbabu/ProvisioningFineractCN):
 ```
-postman-initial-requests/Fineract-Initial-Setup-Environment.postman_environment.json
-postman-initial-requests/Fineract-Initial-Requests.postman_collection.json
+ProvisioningFineractCN/Fineract-Initial-Setup-Environment.postman_environment.json
+ProvisioningFineractCN/Fineract-Initial-Requests.postman_collection.json
 ```
 
 We would initialize postman as follows:
