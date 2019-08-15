@@ -106,9 +106,9 @@ java -jar service/build/libs/service-0.1.0-BUILD-SNAPSHOT-boot.jar -Drun.argumen
 The sequence of commands for deploying the Deposist microservice on a *nix based system are illustrated below.
 
 ```
-git clone https://github.com/apache/fineract-cn-deposit
+git clone https://github.com/apache/fineract-cn-deposit-account-management
 
-cd fineract-cn-deposit/
+cd fineract-cn-deposit-account-management/
 
 sh gradlew publishToMavenLocal
 
