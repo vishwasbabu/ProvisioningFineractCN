@@ -215,5 +215,5 @@ password: password
 
 ## References
 
-Derived from https://github.com/senacor/BankingInTheCloud-Fineract
+Derived from https://github.com/apache/fineract-cn-demo-server and https://github.com/senacor/BankingInTheCloud-Fineract
 
