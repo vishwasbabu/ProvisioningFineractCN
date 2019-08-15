@@ -1,9 +1,6 @@
 # Provisioning Fineract-CN
 Instructions and sample scripts for manually provisioning the [Apache Fineract-CN suite of projects](https://github.com/search?utf8=%E2%9C%93&q=apache/fineract-cn)
 
-
-## Project information
-
 Additional Information on Fineract-CN is available at https://cwiki.apache.org/confluence/display/FINERACT/Fineract+CN
 
 
@@ -134,14 +131,14 @@ java -jar service/build/libs/service-0.1.0-BUILD-SNAPSHOT-boot.jar -Drun.argumen
 ```
 
 
-### Initializing the application by sending requests through postman
+### Initializing the application
 
-Once all services (and the fims-web-app) are started you will have to create some initial data like a user to login etc.  We do this by using Postman, a tool to send HTTP requests to a defined server. 
+Once all services are started you will have to create some initial data like a user to login etc.  We do this by using Postman, a tool to send HTTP requests to a defined server. 
 
 #### Provisioning the Microservices
 
 We provide a postman-request-collection as well as a postman-environment that defines variables that are used to hold values received in responses. Both files are located in the 
-[postman-initial-requests folder](https://github.com/senacor/BankingInTheCloud-Fineract/tree/master/fineract-project_snapshot/postman-initial-requests):
+[postman-initial-requests folder](https://github.com/vishwasbabu/ProvisioningFineractCN/postman-initial-requests):
 ```
 postman-initial-requests/Fineract-Initial-Setup-Environment.postman_environment.json
 postman-initial-requests/Fineract-Initial-Requests.postman_collection.json
@@ -161,7 +158,7 @@ The first request will retrieve a token. For this request you basically only nee
 ```
 {
     "token": "Bearer eyJhbGciOiJSUzUxMiJ9.eyJhdWQiOiJwcm92aXNpb25lci12MSIsInN1YiI6IndlcGVtbmVmcmV0IiwiL21pZm9zLmlvL3NpZ25hdHVyZVRpbWVzdGFtcCI6IjIwMTctMDQtMThUMDlfNDRfMjIiLCIvbWlmb3MuaW8vdG9rZW5Db250ZW50IjoiUk9MRV9BRE1JTiIsImlzcyI6InN5c3RlbSIsImlhdCI6MTUwMDA1NjgxNywiZXhwIjoxNTAwNDE2ODE3fQ.OfxTUTStJbKQc4rAPW5PLIQYNjCG_uqcNPR4up6pIQBWLDxkgEiU9EF1WrB5NQdzXBJIHqjDFQpaVywm5DersIh4LxPGD3MZj3TqZK5_LUcZvBDTa4Xgb41e3xXkWB4TkN6KqfmiK12Ngjrrj7qZGBdtypDmFmZwKQRZIOL6T3QbI7LpbPGpeWjpWZirFgtcn5B1Z_h3r9rirCzecUdVjlaplQufxDuVFJS0R3N67pyuGQENvCAC716ID5KbokTQtITXfjnCztFuQBbtCPcYLIzxsKv_-E5k6Gd0pv01OC0XpY3NSgfAolVVgvSXKoRnL3NwAMP2yuzX6i8hR_q82Q",
-    "accessTokenExpiration": "2017-07-18T22:26:57.784"
+    "accessTokenExpiration": "2019-07-18T22:26:57.784"
 }
 ```
 
@@ -189,10 +186,10 @@ drop keyspace seshat;
 ```  
 
 
-#### First sign-in in fims-web-app
+### Sign-in using fims-web-app
 
-Requirement: all the requests from postman were successfully sent.
-User ```mifos``` is created in the the last two requests (user creation and role assignment) in the postman request-list. This user has admin rights and is able to manage offices, accounts, customers and thier deposits.
+Requirement: Fineract-CN has been successfully provisioned by following the instructions in the previous sections
+User ```mifos``` is created in the the last two requests (user creation and role assignment) in the postman request-list. This user has admin rights and is able to manage offices,customers and thier deposits.
 
 Navigate to localhost:4200 in your browser and enter the credentials of the user you want to sign in with.
 
@@ -215,4 +212,8 @@ password: password
 ### Project Setup in IntelliJ IDEA
 
 ****In Progress********
+
+## References
+
+Derived from https://github.com/senacor/BankingInTheCloud-Fineract
 
