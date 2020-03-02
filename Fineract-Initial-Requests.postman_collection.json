@@ -421,7 +421,7 @@
 					"raw": "[\n\t{\n\t\t\"name\": \"identity-v1\"\n\t}\n]"
 				},
 				"url": {
-					"raw": "http://{{provisionerUrl}}/provisioner/v1/tenants/s{{tenantIdentifier}}/applications",
+					"raw": "http://{{provisionerUrl}}/provisioner/v1/tenants/{{tenantIdentifier}}/applications",
 					"protocol": "http",
 					"host": [
 						"{{provisionerUrl}}"
@@ -430,7 +430,7 @@
 						"provisioner",
 						"v1",
 						"tenants",
-						"s{{tenantIdentifier}}",
+						"{{tenantIdentifier}}",
 						"applications"
 					]
 				}
